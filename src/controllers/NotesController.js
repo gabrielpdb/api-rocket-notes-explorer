@@ -17,6 +17,7 @@ class NotesController {
         url: link
       }
     })
+    console.log(request.body)
 
     await knex('links').insert(linksInsert)
 
